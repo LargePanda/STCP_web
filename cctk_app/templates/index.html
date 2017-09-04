@@ -1,0 +1,111 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chinese-to-Chinese Conversion & Proofreading</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href = {% static 'css/bootstrap.min.css' %} rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href = {% static 'css/custom_template.css' %} rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src= {% static 'js/ie-emulation-modes-warning.js' %}></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">STCP</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h3  style="font-size:2em">Simplified-Traditional Chinese Conversion</h3>
+        <p class="lead"></p>
+      </div>
+      <div>
+      <table class="center_table">
+        <tr>
+          <td rowspan = "2" class="left" id ="input">
+            <div class="ta_left" id="ta">台湾黑熊（学名：Ursus thibetanus formosanus、布农语：tumaz、赛夏语：somay、泰雅语：ngarox、邹语：cmoi、卡那卡那富语：cumai、太鲁阁语：kumay），是台湾特有的亚洲黑熊亚种，胸前的V字型白色斑纹(太鲁阁语称做 rabang)是亚洲黑熊共有的特徵。台湾黑熊目前现存族群数量不多，出没于台湾中央山脉海拔1000公尺-3500公尺的山区，活动范围可达50平方公里。早在1932年日本探险家堀川安市所着的《台湾哺乳动物图说》中，因土地开发导致栖息地丧失，台湾黑熊的数量在下降中。在1989年依照台湾《野生动物保育法》，台湾黑熊被列为濒危。2001年台湾黑熊被选为台湾最具代表性的野生动物，在不少台湾公司、企业、地方政府等，都选用台湾黑熊作为吉祥物、代表物，是着名的台湾意象之一。 
+            </div>
+          </td>
+          <td>
+            <button type="button"  unselectable="on" id = "trans_btun" class="btn btn-success">
+            CONVERT
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="right" id ="queried" style="vertical-align:top;padding-top:10px">
+            <div class="suggestion_container" style="padding-left:5px;padding-top:10px">
+            <p class="header_text"><b>Alternatives</b></p>
+            <div id="radio_group" >
+            </div>
+            <p class="header_text"><b>Explanation</b><p>
+            <textarea id="explain" rows="4" ></textarea>
+            <p class="header_text"><b>Examples</b></p>
+            <textarea id="example" rows="2" ></textarea>
+            <button  unselectable="on" id = "btun" class="btn btn-info">
+            APPLY
+            </button>
+
+            </div>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src = {% static 'js/bootstrap.min.js' %}></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src = "./js/ie10-viewport-bug-workaround.js"></script>
+    <script type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src = {% static 'js/mapper.js' %}></script>
+    <script src = {% static 'js/char_explain.js' %}></script>
+
+
+  </body>
+</html>
