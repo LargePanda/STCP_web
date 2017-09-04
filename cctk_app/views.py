@@ -17,6 +17,5 @@ def convert(request):
     source = request.GET.get('text', None)
     target = source
     target = cctk_data.convert.change(target)
-    print target
     data = {'text': target}
     return JsonResponse(data)
