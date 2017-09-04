@@ -1,8 +1,11 @@
-# STCP_web
+# STCP web
 ![Screenshot](https://github.com/LargePanda/STCP_web/blob/master/cctk_app/cctk_data/screen.png)
 
-### Paper: https://drive.google.com/open?id=0B5I9T0WNNVaydVl5R1NVTHh4SEk
-### Web Demo: http:http://lagos.lti.cs.cmu.edu:8002
+#### Paper
+https://drive.google.com/open?id=0B5I9T0WNNVaydVl5R1NVTHh4SEk
+
+#### Web Demo
+http://lagos.lti.cs.cmu.edu:8002
 
 ## How to deploy?
 
