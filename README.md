@@ -13,7 +13,8 @@ http://lagos.lti.cs.cmu.edu:8002
 https://docs.djangoproject.com/en/1.11/topics/install/
 
 #### Download Language Model
-URL: 
+https://drive.google.com/file/d/0B5I9T0WNNVayRkJPNzREcWh3bDg/view?usp=sharing
+Copy and paste text.binary into cctk_django/cctk_app/cctk_data/dictionary/
 
 #### Start Server
 type "python mamange.py runserver"
